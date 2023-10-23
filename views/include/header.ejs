@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" />
+    <title>My Express App</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <script src="/js/header.js"></script>
+    <script src="/js/navbar.js"></script>
+    <link rel="icon" href="/img/top-img.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nns">
+            <img src="/img/logo.png" class="mns" alt="Logo">
+
+        </div>
+        <div class="navbar-menu-button" onclick="toggleMobileMenu()">
+            <i id="menu-icon" class="fa-solid fa-bars navbar-menu-button-icon"></i>
+        </div>
+
+        <a class="navbar-a" href="/">Home</a>
+        <a class="navbar-a" href="/blog">Blog</a>
+        <a class="navbar-a" href="/social">Social</a>
+        <a style="margin-right: 23px;" class="navbar-a" href="/about">About</a>
+
+    </div>
+    <div class="navbar-menu">
+        <img src="/img/modeil-logo.png" class="lks" alt>
+
+        <a class="navbar-a-menu" href="/"><i style="margin-right: 5px;" class="fa-light fa-house"></i> Home</a>
+        <a class="navbar-a-menu" href="/blog"><i class="fa-light fa-blog uut"></i> Blog</a>
+        <a class="navbar-a-menu" href="/social"><i class="fa-light fa-hashtag uut"></i> Social</a>
+        <a class="navbar-a-menu" href="/about"><i class="fa-light fa-user uut"></i> About</a>
+
+        <!-- Footer inside the navbar-menu -->
+        <div class="navbar-footer">
+            <p style="font-size: 13px;">&copy; 2023 Tüm Hakları Saklıdı /
+                Eren</p>
+        </div>
+    </div>
+
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <div class="modal-content">
+
+            <img class="sd" src="/img/logo.png" alt="Görüntü">
+            <a href="/img/logo.png" download><button class="md-lg-dw">İndir</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

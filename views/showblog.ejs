@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="/css/show-bg.css">
+
+    </head>
+
+    <body>
+        <div class="kyy">
+            <div class="cvcv">
+                <img src="<%= blog.image %>" alt="<%= blog.blogTitle %> Image">
+                <h1>
+                    <%= blog.blogTitle %>
+                </h1>
+            </div>
+            <p class="vvx">
+                <%= blog.blogContent %>
+            </p>
+
+        </div>
+        <div class="kyy" style="width: 25%;">
+
+            <h2>Yorumlar</h2>
+            <% if (blog.comments && blog.comments.length> 0) { %>
+            <% blog.comments.forEach(function(comment) { %>
+            <div class="comment">
+                <strong>
+                    <%= comment.author %>
+                </strong>
+                <p>
+                    <%= comment.content %>
+                </p>
+            </div>
+            <% }); %>
+            <% } else { %>
+            <p>Henüz yorum yok.</p>
+            <% } %>
+
+            <form action="/blog/<%= blog.blogTitle %>/comment" method="post">
+                <label for="author">Kullanıcı Adı:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="content">Yorum:</label>
+                <textarea id="content" name="content" required></textarea>
+                <button type="submit">Yorum Ekle</button>
+            </form>
+        </div>
+    </body>
+
+</html>

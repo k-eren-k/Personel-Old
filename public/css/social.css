@@ -1,0 +1,140 @@
+body {
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.centered-div {
+    border: 1px solid #dadada;
+    background-color: white;
+    width: 25%;
+    margin: 0 auto;
+    border-top: none;
+    height: calc(100vh - 11vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-orta {
+    text-align: center;
+}
+
+.centered-a {
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 95%;
+    border-radius: 3.5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.centered-a i {
+    margin-right: 2.5px;
+}
+
+
+
+.centered-top {
+    top: 0;
+    background-color: white;
+}
+
+.centered-top img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.centered-a {
+    width: 65%;
+    cursor: pointer;
+    margin-top: 9px;
+    margin-left: auto;
+    font-size: 16px;
+    padding-left: 15px;
+    margin-right: auto;
+}
+
+.centered-a:hover {
+    background-color: rgba(182, 182, 182, 0.541);
+}
+
+.centered-div img {
+    margin-bottom: 80px;
+
+}
+
+.centered-orta {
+    width: 100%;
+}
+
+.ty {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+
+    .centered-div {
+        width: 80%;
+    }
+
+    .centered-a {
+        width: 65%;
+        cursor: pointer;
+        margin-top: 9px;
+        margin-left: auto;
+        font-size: 16px;
+        padding-left: 15px;
+        margin-right: auto;
+    }
+
+    .centered-div img {
+        margin-bottom: 80px;
+
+    }
+
+    .centered-orta {
+        width: 100%;
+    }
+
+    .ty {
+        margin-bottom: 30px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.lssss {
+    color: rgb(194, 0, 253);
+    margin-right: 10px;
+}
+
+.ls {
+    color: rgb(0, 172, 238);
+    margin-right: 10px;
+}
+
+.lss {
+    color: rgb(36, 41, 46);
+    margin-right: 10px;
+}
+
+.kl {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}

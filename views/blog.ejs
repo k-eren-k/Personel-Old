@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="/css/blog.css">
+    </head>
+    <body> <%- include('include/header.ejs') %>
+
+        <div class="al">
+            <% for (let i = 0; i < blogData.length; i++) { %>
+            <div class="kt-bg">
+                <% let post = blogData[i]; %>
+                <% if (post.image) { %>
+                <img src="<%= post.image %>" class="ia" alt="Blog Resmi">
+                <% } %>
+                <div class="oı">
+                    <p class="aa"><%= post.blogTitle %></p>
+                    <p class="oo">
+                        <% if (post.blogContent.length > 20) { %>
+                        <%= post.blogContent.slice(0, 10) +
+                        (post.blogContent.length > 10 ? "..." : "") %>
+                        <% } else { %>
+                        <%= post.blogContent %>
+                        <% } %>
+                    </p>
+                </div>
+            </div>
+            <% if ((i + 1) % 4 === 0) { %>
+        </div> <div class="al">
+
+            <% } %>
+            <% } %>
+        </div>
+    </body>
+</html>

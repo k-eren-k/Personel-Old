@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Paylaşma Sayfası</title>
+    </head>
+    <body>
+        <h1>Blog Paylaşma Sayfası</h1>
+        <form action="/paylas" method="POST" enctype="multipart/form-data">
+            <label for="blogTitle">Blog Başlığı:</label>
+            <input type="text" id="blogTitle" name="blogTitle" required>
+
+            <label for="blogContent">Blog İçeriği:</label>
+            <textarea id="blogContent" name="blogContent" required></textarea>
+
+            <label for="blogImage">Resim Yükle:</label>
+            <input type="file" id="blogImage" name="blogImage" accept="image/*"
+                required>
+
+            <button type="submit">Paylaş</button>
+        </form>
+
+        <div id="error-message"></div>
+    </body>
+</html>
